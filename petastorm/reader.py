@@ -120,7 +120,7 @@ def make_reader(dataset_url,
         on the ``reader_pool_type`` value).
     :param pyarrow_filters: (List[Tuple] or List[List[Tuple]]): Standard PyArrow filters.
         These will be applied when loading the parquet file with PyArrow. More information
-        here: https://arrow.apache.org/docs/python/generated/pyarrow.parquet.ParquetDataset.html 
+        here: https://arrow.apache.org/docs/python/generated/pyarrow.parquet.ParquetDataset.html
     :return: A :class:`Reader` object
     """
     dataset_url = normalize_dir_url(dataset_url)
