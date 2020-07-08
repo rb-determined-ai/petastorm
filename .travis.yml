@@ -57,7 +57,7 @@ before_script:
   - $RUN pip install --upgrade numpy
 
   - $RUN pip install -U pyarrow==${PYARROW_VERSION} tensorflow==${TF_VERSION}
-  - if [[ ${PYSPARK_VERSION} < "3" ]] ; then $RUN pip install pyspark==${PYSPARK_VERSION} --force-reinstall --upgrade ; fi
+  - $RUN pip install pyspark==${PYSPARK_VERSION} --force-reinstall --upgrade
 
   - $RUN pip list
 
